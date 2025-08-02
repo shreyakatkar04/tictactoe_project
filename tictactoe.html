@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    
+    <!-- HOME SCREEN -->
+    <div id="homeScreen" class="screen">
+      <h1>Tic Tac Toe</h1>
+
+      <div class="player-setup">
+        <div class="mode-select">
+          <label><input type="radio" name="mode" value="pvp" checked /> 2 Players</label>
+          <label><input type="radio" name="mode" value="ai" /> 1 Player vs AI</label>
+        </div>
+
+        <div class="inputs">
+          <input type="text" id="player1" placeholder="Enter Player 1 Name (X)" />
+          <input type="text" id="player2" placeholder="Enter Player 2 Name (O)" />
+        </div>
+
+        <button id="startGame">Start Game</button>
+      </div>
+    </div>
+
+    <!-- GAME SCREEN -->
+    <div id="gameScreen" class="screen hidden">
+      <h1>Tic Tac Toe</h1>
+      <div class="status" id="status">Status</div>
+
+      <div class="scoreboard">
+        <div id="score1">Player 1: 0</div>
+        <div id="score2">Player 2: 0</div>
+      </div>
+
+      <div class="board" id="board"></div>
+
+      <div class="buttons">
+        <button id="reset">Reset Game</button>
+        <button id="end">End Game</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
